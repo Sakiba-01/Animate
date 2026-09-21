@@ -26,10 +26,10 @@
             user-select: none; /* Prevents text selection highlighting while dragging */
             -webkit-user-select: none;
         }
-#root {
-    width: 100%;
-    height: 100%;
-}
+        #root {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -42,25 +42,26 @@
     <script type="text/babel">
         const { useState, useEffect, useCallback, useRef } = React;
 
+        // แก้ไข: ใช้ภาพตัวอย่างจากอินเทอร์เน็ตเพื่อให้รันแล้วเห็นผลทันที
         const DEFAULT_SLIDES = [
             {
-                image: { src: "Unshisa.jpg" },
+                image: { src: "https://picsum.photos/400/400?random=1" },
                 title: "Unshisa Koomrod",
             },
             {
-                image: { src: "Nongnapat.jpg" },
+                image: { src: "https://picsum.photos/400/400?random=2" },
                 title: "Nongnapat Luelap",
             },
             {
-                image: { src: "KItsada.jpg" },
+                image: { src: "https://picsum.photos/400/400?random=3" },
                 title: "Kitsada Phanwongsa",
             },
             {
-                image: { src: "Nutthawat.jpg" },
+                image: { src: "https://picsum.photos/400/400?random=4" },
                 title: "Nutthawat Khambanthoeng",
             },
             {
-                image: { src: "Weeraphat.jpg" },
+                image: { src: "https://picsum.photos/400/400?random=5" },
                 title: "Weeraphat Sihawong",
             },
         ];
